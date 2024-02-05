@@ -45,9 +45,9 @@ task.appendChild(deleteButton);
 
         deleteButton.addEventListener('click', function(e){
 
-            let target = e.target;
+            let task = e.target.parentElement;
 
-            target.parentElement.parentElement.remove();
+            task.remove();
 
         });
 
