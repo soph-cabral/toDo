@@ -20,10 +20,10 @@ addTask.addEventListener('click', function(){
     task.appendChild(checkButton);
 
     
-    let deleteButton = document.createElement("button");
-    checkButton.innerHTML = '<i class="fa-solid fa-check"></i>';
-    checkButton.classList.add('deleteTask');
-    task.appendChild(deleteButton);
+let deleteButton = document.createElement("button");
+deleteButton.innerHTML = '<i class="fa-solid fa-trash"></i>'; // Fix the typo here
+deleteButton.classList.add('deleteTask');
+task.appendChild(deleteButton);
 
     if(inputTask.value === "")
     {
