@@ -11,7 +11,7 @@ addTask.addEventListener('click', function(){
     task.classList.add('task');
 
     let li = document.createElement('li');
-    li.innerText = $(inputTask.value);
+    li.innerText = inputTask.value;
     task.appendChild(li);
 
     let checkButton = document.createElement("button");
@@ -21,7 +21,7 @@ addTask.addEventListener('click', function(){
 
     
 let deleteButton = document.createElement("button");
-deleteButton.innerHTML = '<i class="fa-solid fa-trash"></i>'; // Fix the typo here
+deleteButton.innerHTML = '<i class="fa-solid fa-trash"></i>'; 
 deleteButton.classList.add('deleteTask');
 task.appendChild(deleteButton);
 
